@@ -1,6 +1,7 @@
 /* font definitions */
 
 @font-face { font-family: soleil; src: url('Soleil-Regular.ttf'); }
+@font-face { font-family: soleil-bold; src: url("Soleil-Bold.ttf")}
 
 /*resposive design*/
 
@@ -69,7 +70,7 @@ img.mainphoto{
   padding: 0px;
   letter-spacing: 3px;
   text-align: center;
-  font-size: 12px;
+  font-size: 9px;
   line-height: 14px;
   font-family: soleil, sans-serif;
   font-weight: 800;
@@ -85,7 +86,7 @@ img.mainphoto{
   padding: 0px;
   letter-spacing: 3px;
   text-align: center;
-  font-size: 12px;
+  font-size: 9px;
   line-height: 14px;
   font-family: soleil, sans-serif;
   font-weight: 800;
@@ -108,6 +109,41 @@ img.workphoto{
   order: 0;
   width: calc(33.3333% - 30px);
   margin: 0 30px 30px 0;
+}
+
+/*About*/
+
+.about {
+  width: 93%;
+  background-color: #E3FFF6;
+  padding: 65px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+p.about {
+  color: #000000;
+  text-align: center;
+  font-size: 30px;
+  line-height: 45px;
+  font-family: soleil-bold, sans-serif;
+  font-weight: 800;
+}
+
+p.read-more {
+  width: 25%;
+  color: #000000;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin: 0px;
+  padding: 10px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #FFFFFF;
 }
 
 /*Get in touch*/
@@ -143,9 +179,10 @@ img.workphoto{
 
 
 .form {
+  outline: none !important;
   order: 0;
   width: 100%;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 18px;
   font-family: soleil, sans-serif;
   font-weight: 800;
@@ -157,6 +194,7 @@ img.workphoto{
 }
 
 .submit {
+  outline: none !important;
   order: 0;
   width: 50%;
   font-size: 10px;
@@ -187,7 +225,12 @@ p.get-in-touch {
   font-size: 14px;
 }
 
-h1.get-in-touch {
+.stress {
+  font-family: soleil-bold !important;
+}
+
+
+h1 {
   text-align: left;
   font-size: 49px;
   line-height: 72px;
